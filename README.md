@@ -13,13 +13,13 @@ Code Tool for the [Editor.js](https://ifmo.su/editor) allows to include code exa
 Get the package
 
 ```shell
-npm i --save-dev @editorjs/code
+npm i --save-dev @gylraj/code
 ```
 
 Include module at your application
 
 ```javascript
-const CustomCodeTool = require('@editorjs/code');
+const CustomCodeTool = require('@gylraj/code');
 ```
 
 ### Download to your project's source dir
@@ -29,9 +29,9 @@ const CustomCodeTool = require('@editorjs/code');
 
 ### Load from CDN
 
-You can load specific version of package from [jsDelivr CDN](https://www.jsdelivr.com/package/npm/@editorjs/code).
+You can load specific version of package from [jsDelivr CDN](https://www.jsdelivr.com/package/npm/@gylraj/code).
 
-`https://cdn.jsdelivr.net/npm/@editorjs/code@2.0.0`
+`https://cdn.jsdelivr.net/npm/@gylraj/code@2.0.0`
 
 Require this script on a page with Editor.js.
 
