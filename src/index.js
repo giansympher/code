@@ -5,7 +5,7 @@ import { getLineStartPosition } from './utils/string';
 import './index.css';
 
 /**
- * CodeTool for Editor.js
+ * CustomCodeTool for Editor.js
  *
  * @author CodeX (team@ifmo.su)
  * @copyright CodeX 2018
@@ -18,7 +18,7 @@ import './index.css';
 /**
  * Code Tool for the Editor.js allows to include code examples in your articles.
  */
-export default class CodeTool {
+export default class CustomCodeTool {
 
   /**
    * Notify core that read-only mode is supported
@@ -30,7 +30,7 @@ export default class CodeTool {
   }
 
   /**
-   * Allow to press Enter inside the CodeTool textarea
+   * Allow to press Enter inside the CustomCodeTool textarea
    *
    * @returns {boolean}
    * @public
@@ -57,7 +57,7 @@ export default class CodeTool {
     this.api = api;
     this.readOnly = readOnly;
 
-    this.placeholder = this.api.i18n.t(config.placeholder || CodeTool.DEFAULT_PLACEHOLDER);
+    this.placeholder = this.api.i18n.t(config.placeholder || CustomCodeTool.DEFAULT_PLACEHOLDER);
 
     this.CSS = {
       baseClass: this.api.styles.block,
@@ -129,7 +129,7 @@ export default class CodeTool {
   /**
    * Extract Tool's data from the view
    *
-   * @param {HTMLDivElement} codeWrapper - CodeTool's wrapper, containing textarea with code
+   * @param {HTMLDivElement} codeWrapper - CustomCodeTool's wrapper, containing textarea with code
    * @returns {CodeData} - saved plugin code
    * @public
    */
@@ -189,7 +189,7 @@ export default class CodeTool {
   }
 
   /**
-   * Default placeholder for CodeTool's textarea
+   * Default placeholder for CustomCodeTool's textarea
    *
    * @public
    * @returns {string}

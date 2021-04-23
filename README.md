@@ -19,7 +19,7 @@ npm i --save-dev @editorjs/code
 Include module at your application
 
 ```javascript
-const CodeTool = require('@editorjs/code');
+const CustomCodeTool = require('@editorjs/code');
 ```
 
 ### Download to your project's source dir
@@ -49,7 +49,7 @@ var editor = EditorJS({
   
   tools: {
     ...
-    code: CodeTool,
+    code: CustomCodeTool,
   }
   
   ...

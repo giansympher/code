@@ -27,7 +27,7 @@ module.exports = {
     path: __dirname + '/dist',
     publicPath: '/',
     filename: 'bundle.js',
-    library: 'CodeTool',
+    library: 'CustomCodeTool',
     libraryTarget: 'umd',
     libraryExport: 'default',
   },
