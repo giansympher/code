@@ -1,6 +1,6 @@
 {
   "name": "@gylraj/code",
-  "version": "0.0.7",
+  "version": "0.1.01",
   "keywords": [
     "codex editor",
     "code",
@@ -14,20 +14,28 @@
     "type": "git",
     "url": "git+https://github.com/giansympher/code.git"
   },
-  "main": "./dist/bundle.js",
   "scripts": {
-    "build": "webpack --mode production",
-    "build:dev": "webpack --mode development --watch"
+    "build": "webpack --progress",
+    "build:dev": "webpack --mode development --watch",
+    "start": "node test.js"
   },
   "devDependencies": {
-    "@babel/core": "^7.3.4",
-    "@babel/preset-env": "^7.3.4",
-    "babel-loader": "^8.0.5",
-    "css-loader": "^3.5.3",
-    "style-loader": "^1.2.1",
-    "webpack": "^4.29.5",
-    "webpack-cli": "^3.2.3"
+    "@babel/core": "7.5.5",
+    "@babel/node": "^7.8.4",
+    "@babel/preset-env": "7.5.5",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "8.0.6",
+    "css-loader": "^1.0.0",
+    "eslint": "^6.8.0",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.7"
   },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.min.js",
+  "dependencies": {},
   "bugs": {
     "url": "https://github.com/giansympher/code/issues"
   },

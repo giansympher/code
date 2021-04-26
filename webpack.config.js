@@ -1,34 +1,36 @@
+const path = require('path');
+
 module.exports = {
-  entry: './src/index.js',
+  mode: 'production',
+  entry: path.normalize(`${__dirname}/src/index.js`),
+  output: {
+    path: path.normalize(`${__dirname}/dist`),
+    publicPath: '/',
+    filename: 'index.min.js',
+    library: 'CustomCodeTool',
+    libraryTarget: 'umd'
+  },
   module: {
     rules: [
       {
         test: /\.js$/,
-        exclude: /node_modules/,
         use: [
           {
             loader: 'babel-loader',
             query: {
-              presets: [ '@babel/preset-env' ],
+              presets: ['@babel/preset-env'],
             },
           },
         ],
+        exclude: /node_modules/,
       },
       {
         test: /\.css$/,
         use: [
           'style-loader',
-          'css-loader',
-        ],
-      },
-    ],
-  },
-  output: {
-    path: __dirname + '/dist',
-    publicPath: '/',
-    filename: 'bundle.js',
-    library: 'CustomCodeTool',
-    libraryTarget: 'umd',
-    libraryExport: 'default',
-  },
+          'css-loader'
+        ]
+      }
+    ]
+  }
 };
